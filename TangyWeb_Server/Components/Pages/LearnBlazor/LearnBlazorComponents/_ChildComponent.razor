@@ -1,4 +1,6 @@
-﻿<div>
+﻿@inject IJSRuntime _JsRuntime
+@rendermode InteractiveServer
+<div>
     <div class="alert alert-info">@Title</div>
     @if (DangerChildContent != null)
     {
@@ -18,6 +20,7 @@
         }
     }
     <button class="btn btn-danger" @onclick="OnButtonClick">Button to be clicked</button>
+    <_GrandChildComponent></_GrandChildComponent>
 </div>
 @code {
     [Parameter]
@@ -31,4 +34,9 @@
 
     [Parameter]
     public EventCallback OnButtonClick { get; set; }
+
+    public async Task ToastrSuccess()
+    {
+        await _JsRuntime.ToastrSuccess("Operation Successful");
+    }
 }

@@ -1,7 +1,14 @@
 ﻿<div>
     <h4 class="text-primary pt-3">Another Child Component</h4>
-    <input id="name" placeholder="Enter your Name"
+    <input id="name" placeholder="Child Placeholder" @attributes="InputAttributes"/>
 </div>
 @code {
-
+    // [Parameter]
+    // public string Placeholder { get; set; } = "Initial text";
+    // [Parameter]
+    // public bool Required { get; set; } = true;
+    // [Parameter]
+    // public int MaxLengeth { get; set; } = 10;
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> InputAttributes { get; set; } = new Dictionary<string, object>();
 }
