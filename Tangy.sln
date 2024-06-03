@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_Server", "TangyWeb_Server\TangyWeb_Server.csproj", "{6ED9180C-9C40-4AA7-AAD8-4E0C3E35A728}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_Client", "TangyWeb_Client\TangyWeb_Client.csproj", "{E95820EC-9CF6-4624-9614-909DCE81414F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D76D6D40-71D2-40D4-A49E-9E22ED1C4B8C} = {D76D6D40-71D2-40D4-A49E-9E22ED1C4B8C}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_Models", "Tangy_Models\Tangy_Models.csproj", "{D76D6D40-71D2-40D4-A49E-9E22ED1C4B8C}"
 EndProject
@@ -14,6 +17,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_Common", "Tangy_Common\Tangy_Common.csproj", "{DAAA596A-10A2-4B74-AB04-C7085C78D298}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tangy_DataAccess", "Tangy_DataAccess\Tangy_DataAccess.csproj", "{45DCCE2F-61C5-4FFE-8F99-279525502563}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TangyWeb_API", "TanfyWeb_API\TangyWeb_API.csproj", "{29F05ED3-6C11-4030-AE25-D1EFFE19F7CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +50,10 @@ Global
 		{45DCCE2F-61C5-4FFE-8F99-279525502563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45DCCE2F-61C5-4FFE-8F99-279525502563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45DCCE2F-61C5-4FFE-8F99-279525502563}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29F05ED3-6C11-4030-AE25-D1EFFE19F7CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F05ED3-6C11-4030-AE25-D1EFFE19F7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F05ED3-6C11-4030-AE25-D1EFFE19F7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F05ED3-6C11-4030-AE25-D1EFFE19F7CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
